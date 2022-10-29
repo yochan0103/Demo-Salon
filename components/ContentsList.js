@@ -10,11 +10,11 @@ const ContentsList = (props) => {
     return (
         <div className={styles.ContentsWrapper}>
             <Card sx={{m:"1rem", boxShadow:5}}>
-                <div className={styles.imageWrapper}>
-                    <Link href={ButtonLink}>
+                <div className={styles.imageWrapper} scroll={false}>
+                    <Link href={ButtonLink} scroll={false}>
                         <Image src={ImageSrc} alt={ImageAlt} width={width} height={height} objectFit="contain" />
                     </Link>
-                </div>
+                </div> 
                 <div className={styles.titleWrapper}>
                     <Typography sx={{
                         borderBottom:"solid 2px orange;", 
@@ -23,7 +23,7 @@ const ContentsList = (props) => {
                         letterSpacing:"0.14em",
                         fontSize:'1.17em',
                     }}>
-                        <Link href={ButtonLink}>
+                        <Link href={ButtonLink} scroll={false}>
                             {title}
                         </Link>
                     </Typography>
@@ -37,7 +37,7 @@ const ContentsList = (props) => {
                 </Typography>
                 <div className={styles.ButtonWrapper}>
                     <Button variant='contained' color='warning' sx={{fontFamily:'Hiragino Kaku Gothic ProN', letterSpacing:'0.14em'}}>
-                        <Link href={ButtonLink}>
+                        <Link href={ButtonLink} scroll={false}>
                             More
                         </Link>
                     </Button>
