@@ -1,0 +1,27 @@
+.NavWrapper {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2rem;
+    color: black;
+    padding-left: 10rem;
+}
+
+.ListWrapper {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin-right: 5%;
+}
+
+.List {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.List:hover {
+    color:coral;
+}

@@ -1,0 +1,25 @@
+.ContentsWrapper {
+    width:30vw;
+    height:auto;
+    margin: 2rem;
+}
+
+.imageWrapper {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.titleWrapper {
+    text-align: center;
+    margin-top:10px;
+}
+
+.titleWrapper:hover{
+    color: orange;
+}
+
+.ButtonWrapper {
+    text-align: center;
+    margin-bottom: 30px;
+}
