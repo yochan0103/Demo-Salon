@@ -4,15 +4,15 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import Link from 'next/link';
-import AnimationTrigger from './AnimationTrigger'
+import AnimationTrigger from './AnimationTrigger';
 
 const ContentsList = (props) => {
     const {title, ImageSrc, width, height, ImageAlt, contents, ButtonLink} = props;
     return (
+        <AnimationTrigger rootMargin="0px" animation={styles.fadeIn} triggerOnce>
             <div className={styles.ContentsWrapper}>
-                <AnimationTrigger animation="fadeIn" rootMargin="-100px" triggerOnce className={styles.fadeIn}>
                     <Card sx={{m:"1rem", boxShadow:5}}>
-                        <div className={styles.imageWrapper} scroll={false}>
+                        <div className={styles.imageWrapper}>
                             <Link href={ButtonLink} scroll={false}>
                                 <Image src={ImageSrc} alt={ImageAlt} width={width} height={height} objectFit="contain" />
                             </Link>
@@ -45,9 +45,8 @@ const ContentsList = (props) => {
                             </Button>
                         </div>
                     </Card>
-                </AnimationTrigger>
             </div>
-        
+        </AnimationTrigger>
     )
 }
 
